@@ -11,9 +11,8 @@
     * no return keyword inside the function
 
     ##
-    Arrow functions can't use to define methods with constructors or
-    factories. because, arrow functions don't have their own 'this'
-    context.
+    Arrow functions can't use to define methods with prototypes.
+    because, arrow functions don't have their own 'this' context.
 */
 
 // Define a constructor function
@@ -26,7 +25,7 @@ function Person(firstName, lastName, age) {
 
     // Method
     this.fullname = () => {
-        return `${this.firstName} ${this.lastName}`;
+        return `${firstName} ${lastName}`;
     }
 }
 
