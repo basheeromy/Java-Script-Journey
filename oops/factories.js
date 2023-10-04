@@ -9,8 +9,9 @@
 
 function createUser(firstName, lastName) {
     return {
-        firstName: firstName,
-        lastName: lastName,
+        //firstName: firstName, // simple syntax is bellow
+        firstName,
+        lastName,
         fullName: function() {
             return `${this.firstName} ${this.lastName}`;
         }
@@ -30,5 +31,5 @@ console.log(user2.fullName()); // "Fathima Thasni"
 
  * Composition: You can use factory functions to compose complex objects
    by combining multiple factory functions.
-   
+
  */
