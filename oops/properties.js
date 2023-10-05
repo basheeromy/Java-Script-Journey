@@ -51,3 +51,6 @@ for ( let key in user1) {
 if ('name' in user1){
     console.log('User has name');
 }
+
+let keys = Object.keys(user1);
+console.log(keys);
